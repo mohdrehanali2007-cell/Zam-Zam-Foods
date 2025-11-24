@@ -1,19 +1,6 @@
 import React from 'react';
 import { ExternalLink } from 'lucide-react';
-import { BUSINESS_INFO } from '../constants';
-
-// NOTE: Replace these URLs with the actual image addresses from your Google Maps listing.
-// Right-click the image in Google Maps and select "Copy Image Address".
-const images = [
-  { url: 'https://images.unsplash.com/photo-1624323914556-db7a4c27af05?auto=format&fit=crop&w=800', title: 'Sweet Shop Display' },
-  { url: 'https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=800', title: 'Special Biryani' },
-  { url: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800', title: 'Dining Area' },
-  { url: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800', title: 'Fresh Snacks' },
-  { url: 'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=800', title: 'Gulab Jamun' },
-  { url: 'https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800', title: 'Family Seating' },
-  { url: 'https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=800', title: 'Traditional Sweets' },
-  { url: 'https://images.unsplash.com/photo-1567188040754-5835b2d2c610?auto=format&fit=crop&w=800', title: 'Celebration Orders' },
-];
+import { BUSINESS_INFO, IMAGES } from '../constants';
 
 const Gallery: React.FC = () => {
   return (
@@ -28,13 +15,12 @@ const Gallery: React.FC = () => {
 
         {/* Masonry-style Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {images.map((img, idx) => (
+          {IMAGES.GALLERY.map((img, idx) => (
             <div 
               key={idx} 
               className={`relative rounded-xl overflow-hidden group h-64 ${
                 // Make specific items span 2 rows or cols for visual interest
-                idx === 1 ? 'md:col-span-2' : 
-                idx === 4 ? 'md:row-span-2 h-full' : ''
+                idx === 0 ? 'md:col-span-2 md:row-span-2 h-full' : ''
               }`}
             >
               <img 

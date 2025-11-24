@@ -1,5 +1,6 @@
 import React from 'react';
 import { Gift, Calendar, Sparkles } from 'lucide-react';
+import { IMAGES } from '../constants';
 
 const BulkOrders: React.FC = () => {
   return (
@@ -49,7 +50,7 @@ const BulkOrders: React.FC = () => {
           
           <div className="lg:w-1/2 relative h-64 lg:h-auto">
             <img 
-              src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=800" 
+              src={IMAGES.BULK_ORDERS} 
               alt="Catering Setup" 
               className="absolute inset-0 w-full h-full object-cover"
             />

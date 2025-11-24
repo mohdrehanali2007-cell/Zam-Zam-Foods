@@ -1,5 +1,6 @@
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
+import { IMAGES } from '../constants';
 
 const Hero: React.FC = () => {
   return (
@@ -7,9 +8,9 @@ const Hero: React.FC = () => {
       {/* Background Image Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920"
-          alt="Indian Sweets and Dining"
-          className="w-full h-full object-cover opacity-40"
+          src={IMAGES.HERO_BACKGROUND}
+          alt="Zam Zam Foods Building"
+          className="w-full h-full object-cover opacity-60"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
       </div>

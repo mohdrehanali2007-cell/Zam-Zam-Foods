@@ -12,6 +12,41 @@ export const BUSINESS_INFO = {
   reviewCount: 1300
 };
 
+// ==========================================
+// IMAGE CONFIGURATION
+// ==========================================
+export const IMAGES = {
+  // The main large image at the top of the page
+  // PLEASE SAVE YOUR IMAGE AS 'hero-image.jpg' IN YOUR PROJECT FOLDER
+  HERO_BACKGROUND: "./hero-image.jpg",
+  
+  // The image shown in the 'Why Choose Us' / Features section (Your storefront)
+  STOREFRONT: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800",
+  
+  // The image for the Events/Bulk Orders section
+  BULK_ORDERS: "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=800",
+
+  // Menu Item Images
+  MENU: {
+    GULAB_JAMUN: "https://images.unsplash.com/photo-1605197582570-5b08c62c262e?auto=format&fit=crop&w=800",
+    KAJU_KATLI: "https://images.unsplash.com/photo-1575482361772-91f9737f5904?auto=format&fit=crop&w=800",
+    BIRYANI: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800",
+    BAKERY: "https://images.unsplash.com/photo-1509365463985-25d6d5b9d303?auto=format&fit=crop&w=800",
+  },
+
+  // Gallery Images (Grid)
+  GALLERY: [
+    { url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800", title: 'Our Storefront' },
+    { url: 'https://images.unsplash.com/photo-1631515243343-04a80e4b4458?auto=format&fit=crop&w=800', title: 'Hyderabadi Biryani' },
+    { url: 'https://images.unsplash.com/photo-1550966871-3ed3c47e2ce2?auto=format&fit=crop&w=800', title: 'Dining Atmosphere' },
+    { url: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800', title: 'Fresh Snacks' },
+    { url: 'https://images.unsplash.com/photo-1536304445888-06a928236d10?auto=format&fit=crop&w=800', title: 'Jalebi & Sweets' },
+    { url: 'https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800', title: 'Family Seating' },
+    { url: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800', title: 'Traditional Ladoo' },
+    { url: 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=800', title: 'Catering Service' },
+  ]
+};
+
 export const FEATURES: Feature[] = [
   {
     icon: Star,
@@ -41,7 +76,7 @@ export const MENU_HIGHLIGHTS: MenuItem[] = [
     name: 'Special Gulab Jamun',
     description: 'Soft, melt-in-your-mouth khoya dumplings soaked in rose-saffron syrup.',
     category: 'sweet',
-    image: 'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=800',
+    image: IMAGES.MENU.GULAB_JAMUN,
     popular: true
   },
   {
@@ -49,14 +84,14 @@ export const MENU_HIGHLIGHTS: MenuItem[] = [
     name: 'Kaju Katli',
     description: 'Diamond-shaped classics made with premium cashews and pure ghee.',
     category: 'sweet',
-    image: 'https://images.unsplash.com/photo-1589947938363-22858a74e64e?auto=format&fit=crop&w=800'
+    image: IMAGES.MENU.KAJU_KATLI
   },
   {
     id: '3',
     name: 'Hyderabadi Chicken Biryani',
     description: 'Aromatic basmati rice cooked with tender chicken and authentic spices.',
     category: 'savory',
-    image: 'https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=800',
+    image: IMAGES.MENU.BIRYANI,
     popular: true
   },
   {
@@ -64,7 +99,7 @@ export const MENU_HIGHLIGHTS: MenuItem[] = [
     name: 'Assorted Bakery Platter',
     description: 'Freshly baked biscuits, rusks, and puffs straight from our oven.',
     category: 'bakery',
-    image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800'
+    image: IMAGES.MENU.BAKERY
   }
 ];
 
